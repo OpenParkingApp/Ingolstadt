@@ -1,15 +1,9 @@
 import XCTest
-@testable import OpenParkingSample
+import OpenParkingTests
+import OpenParkingSample
 
 final class OpenParkingSampleTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(Sample().text, "Hello, World!")
+    func testDatasource() throws {
+        assert(datasource: Sample())
     }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
 }
